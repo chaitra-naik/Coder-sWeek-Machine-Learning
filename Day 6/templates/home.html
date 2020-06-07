@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <title>Purchased Prediction</title>
+</head>
+<body>
+  <h1><div style="text-align:center"><font color="purple">Purchased Prediction</font></div></h1>
+  <hr>
+  </br>
+  <h2><div style="text-align:center">Enter the values for User ID, Gender, Age, EstimatedSalary</div></h2>
+  </br>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-6'>
+        <form method="POST" action="/predict">
+          <div class="form-group">
+            <label form="User_ID"><p class="font-weight-bold">User_ID</p></label>
+            <input type="text" name="User_ID">
+            <small id="Userhelp" class="form-text text-muted">Enter the User_ID</small>
+            </div>
+
+            <div class="form-group">
+              <label form="Gender"><p class="font-weight-bold">Gender</p></label>
+              <input type="text" name="Gender">
+              <small id="Genderhelp" class="form-text text-muted">Enter the Gender</small>
+              </div>
+
+              <div class="form-group">
+                <label form="Age"><p class="font-weight-bold">Age</p></label>
+                <input type="text" name=Age>
+                <small id="Agehelp" class="form-text text-muted">Enter the Age</small>
+                </div>
+
+                <div class="form-group">
+                  <label form="EstimatedSalary"><p class="font-weight-bold">Estimated Salary</p></label>
+                  <input type="text" name="EstimatedSalary">
+                  <small id="EstimatedSalaryhelp" class="form-text text-muted">Enter the Estimated Salary</small>
+                  </div>
+
+                  <input class='btn btn-primary' type='Submit' value='Submit'>
+          </form>
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>
